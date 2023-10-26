@@ -22,7 +22,14 @@ document.querySelector('.search-hide').addEventListener('click', function(e) {
 })
 
 //start: Categories
-new Swiper('.swiper-category', {
-    slidesPerView: 'auto',
-    spaceBetween: 24,
+const swiper = new Swiper('.swiper-category', {
+   spaceBetween: 24,
+   slidesPerView: 'auto',
 });
+
+
+//start: Popular
+const swiper2 = new Swiper('.swiper-popular', {
+    slidesPerView: 1,
+    loop: true,
+ });
